@@ -195,7 +195,7 @@ If the admin wishes to add a new member on the platform, they can do so by click
 * User Role
 
 
-*Skills**: Here the admin can add ‘n’ number of skills that they are looking for in a candidate.  
+**Skills**: Here the admin can add ‘n’ number of skills that they are looking for in a candidate.  
 
 When the need arises to add a new skill, the admin can do it by clicking on the “+Create” icon and just adding the skill name in the box as shown below. 
 
