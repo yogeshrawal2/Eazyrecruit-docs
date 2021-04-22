@@ -1,6 +1,7 @@
 ![Logo](https://i.ibb.co/KyNtH0m/logo-2x.png)
 
 # EazyRecruit
+---
 
 Table of Content 
 ---
