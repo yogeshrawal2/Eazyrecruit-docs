@@ -7,40 +7,15 @@ Eazyrecruit is a solution that is committed to the advancement of HR Talent Acqu
 
 **What can EazyRecruit be used for?** If you have to fill in positions, even if it’s only one or two jobs a year, EasyRecruit can help you with ease. From SMEs to multinational companies, EazyRecruit can prove to be an effective hiring tool. From one user to hundreds.
 
-## General Features
-Dig into the EazyRecruit capabilities and features to know more.
+EazyRecruit can work well for very high-volume recruiting. Importing and dealing with many candidates at once per role is allowed in EazyRecruit. It will handle all of recruiting, from job posting and applications, to initial candidate intake, scheduling the interview, offer, acceptance and candidate start. EazyRecruit was designed by recruiters, for recruiters and continues to be developed with recruiting as the sole focus.
+
+## Setup
 
 **Open Source Software**: EazyRecruit is open-source software. This means it is free to use, and you are free to modify it in any way you want. Seriously, if you want to do it, get down into the code and change absolutely anything!
 
-**Full recruiting life-cycle**: EazyRecruit provides the infrastructure for the entire recruiting life-cycle, regardless of the type of role that you are recruiting for, or the volume of openings that you are dealing with. It also works well for very high-volume recruiting. Importing and dealing with many candidates at once per role is easy in EazyRecruit. We can walk you through the process, including the sales cycle, from building targeted lead lists, making client calls, getting signed agreements and taking job orders. It will handle all of your recruiting tasks:
-
-1. Job posting and applications
-2. To initial candidate intake
-3. Interview scheduling
-4. Sending the offer letter
-5. Acceptance and onboarding of the candidate
-
-EazyRecruit is designed by recruiters, for recruiters and continues to be developed with recruiting as the sole focus. 
-
-**Support**: We have an active community of people that are willing to help as much as possible though. Also, we are slowly adding to our documentation. 
-
-**Intuitive interface**: EazyRecruit has an easy to use, intuitive interface. This means minimal training time for you. The job portal also has a simple search and application process that your candidates will get through easily.
-
 **Web-based and local**: EazyRecruit can be installed in a variety of environments. For the solo recruiter/single user, EazyRecruit can be installed on your local computer, accessible only by you. It can also be installed and accessible via the internet, through a public-facing web server, so multiple users from all over the world can access and use the software together. _Make sure the appropriate measures are taken for the setup that you choose_. 
 
-**Skills-based tagging**: Skill-based tagging serves as a very functional alternative to keyword searching. Within EazyRecruit, one can make a list of skill-sets required for the job. The candidates matching that criteria can be narrowed down easily.
-
-**Calendar**: EazyRecruit has a rich calendar built-in that provides a thorough and accurate overview of interview schedules. If you use the calendar system, you will always know what is coming up, and be able to quickly find information from past scheduled events. The calendar can be synced with Google for calendar import and access.
-
-**Ownership of data**: You own the data control and its security. No need for your data to be on someone else’s servers, unless that is how you choose to do it. 
-
-**Backup and restore**: Your EazyRecruit system can be backed up as often as you want, ensuring no loss of data, ever.
-
-**User access levels**: There can be different access levels for users in the EazyRecruit system, which the administrator can set up and assign.
-
-**Built-in Emailing**: The email functionality within EazyRecruit is substantial. Currently, EazyRecruit can be used to send emails to candidates, clients, and contacts. It can also be used to notify of status changes and new applications, or anything you would like it to do.
-
-## Installation
+### Installation Guide
 
 * Docker
    * sudo apt update
@@ -59,6 +34,56 @@ EazyRecruit is designed by recruiters, for recruiters and continues to be develo
    * After repo cloning, copy example.env and create .env and update the variables listed there.
    * Run the command on root directory - `sh deploy.sh`
    * After successful setup, All the details such as web url, Admin Username and Admin Password will displayed on the screen
+
+* Languages Used
+   * Python
+   * HTML
+   * JS, TS
+ 
+* Framework Used
+   * Angular
+   * Expressjs
+ 
+* Database
+   * Mongo
+   * Redis
+
+### Architecture
+
+![Architecture](https://i.ibb.co/XjSvp9F/Eazyrecruit-Architecture.png)
+
+**Nginx**: A Nginx is an intermediary proxy service which takes a client request, passes it on to one or more servers, and subsequently delivers the server’s response back to the client.
+
+**Engine**: It's a celery application, the main functionality of this module is to execute the tasks that are scheduled by the core service or periodically scheduled.
+
+**Resume Parser**: It parses the name, email address, skills and other information from the resume uploaded by core service and after extracting the information it creates an applicant in the system for further process.
+
+**Email Parser**: It checks the provided mailbox for new mails and analyzes them if it contains a resume or not, if it's a resume mail then this service downloads that resume and passes it on to the resume parser.
+
+**Core Service**: It's an expressjs based application that provides endpoints for the client to access all services provided by Eazyrecruit.
+
+* Job Portal
+* Public APIs
+* Web Admin
+
+**Redis**: An open source, in-memory data structure is used as a celery broker for the system.
+
+**MongoDB**: This cross-platform document-oriented database is used as a main db of the application to store all the information to make it more flexible.
+
+**Elastic**: Elasticsearch is a highly scalable open-source full-text search and analytics engine. It provides the power of quick search to the system.
+
+## General Features
+Dig into the EazyRecruit capabilities and features to know more.
+
+**Full recruiting life-cycle**: EazyRecruit provides the infrastructure for the entire recruiting life-cycle, regardless of the type of role that you are recruiting for, or the volume of openings that you are dealing with. It also works well for very high-volume recruiting. Importing and dealing with many candidates at once per role is easy in EazyRecruit. We can walk you through the process, including the sales cycle, from building targeted lead lists, making client calls, getting signed agreements and taking job orders. It will handle all of your recruiting tasks:
+
+1. Job posting and applications
+2. To initial candidate intake
+3. Interview scheduling
+4. Sending the offer letter
+5. Acceptance and onboarding of the candidate
+
+EazyRecruit is designed by recruiters, for recruiters and continues to be developed with recruiting as the sole focus. 
 
 - **Jobs/Job Pipeline**
        In this section Admin/HR can create jobs with various details such as job title, Job description, Minimum/Maximum experience required for the Job, Meta image, Meta title, Meta description etc. 
@@ -99,6 +124,22 @@ EazyRecruit is designed by recruiters, for recruiters and continues to be develo
             Candidates can apply for a specific job.
          - Social Sharing
            Share jobs on various social platforms such as Linkedin, Twitter, Facebook.
+
+**Support**: We have an active community of people that are willing to help as much as possible though. Also, we are slowly adding to our documentation. 
+
+**Intuitive interface**: EazyRecruit has an easy to use, intuitive interface. This means minimal training time for you. The job portal also has a simple search and application process that your candidates will get through easily.
+
+**Skills-based tagging**: Skill-based tagging serves as a very functional alternative to keyword searching. Within EazyRecruit, one can make a list of skill-sets required for the job. The candidates matching that criteria can be narrowed down easily.
+
+**Calendar**: EazyRecruit has a rich calendar built-in that provides a thorough and accurate overview of interview schedules. If you use the calendar system, you will always know what is coming up, and be able to quickly find information from past scheduled events. The calendar can be synced with Google for calendar import and access.
+
+**Ownership of data**: You own the data control and its security. No need for your data to be on someone else’s servers, unless that is how you choose to do it. 
+
+**Backup and restore**: Your EazyRecruit system can be backed up as often as you want, ensuring no loss of data, ever.
+
+**User access levels**: There can be different access levels for users in the EazyRecruit system, which the administrator can set up and assign.
+
+**Built-in Emailing**: The email functionality within EazyRecruit is substantial. Currently, EazyRecruit can be used to send emails to candidates, clients, and contacts. It can also be used to notify of status changes and new applications, or anything you would like it to do.
 
 ## Screens in Depth 
    
@@ -157,17 +198,17 @@ EazyRecruit is designed by recruiters, for recruiters and continues to be develo
 * Skills
                    
 A candidate can be added to the database by clicking on the "Create" tab. One can add information like: 
-First Name, Middle Name, Last Name
-Email Address
-Contact Number 
-Referred by 
-Availability 
-Notice Period
-Experience 
-Skills
-Current and Expected CTA
-Current Location
-Resume
+* First Name, Middle Name, Last Name
+* Email Address
+* Contact Number 
+* Referred by 
+* Availability 
+* Notice Period
+* Experience 
+* Skills
+* Current and Expected CTA
+* Current Location
+* Resume
                        
 If the admin wishes to upload multiple resumes they can do so by clicking the ‘Upload’ button and enter information in the database.
 
@@ -201,12 +242,48 @@ When the need arises to add a new skill, the admin can do it by clicking on the 
 
 **Applicants** - Under the ‘Applicants’ tab, the admin can choose to ‘Reprocess resumes’ or ‘Resync Database’ in order to keep the information updated. 
 
-**Email Settings** - We offer the option to select between work email, Gmail account or third-party email via SMTP. One can design and configure email here, the preview of which is shown like the image below. 
-The email template customization can be done using the ‘Edit’ link at the bottom of the page. By use of simple HTML and CSS, the email header, body, as well as footer can be defined. 
+**Email Settings** - We offer the option to select between work email, Gmail account or third-party email via SMTP. One can design and configure email here, the preview of which is shown like the image below. The email template customization can be done using the ‘Edit’ link at the bottom of the page. By use of simple HTML and CSS, the email header, body, as well as footer can be defined. 
 
 **Google Analytics** - The company webpage, where the fresh job requirements are in general posted can be tracked via Google Analytics on the EazyRecruit platform.
 
-**Google Recaptcha** - In order to confirm that the job postings are being filled by candidates only and not bots or spam, Recaptcha can be added at the end of the job details. 
+**Google Recaptcha** - In order to confirm that the job postings are being filled by candidates only and not bots or spam, Recaptcha can be added at the end of the job details.
+
+## Administration
+
+### EMail Settings
+* Inbound Settings (imap)
+Configure Imap to fetch resume from specific email-id.
+
+* Outbound Settings
+Configure smtp to send emails.
+
+* Email template Preview
+Preview and configure the email template that is sent to the applicant.
+
+### Branding
+In this section of the platform, the admin can customize the job hiring page according to the company’s branding. The admin is free to add company details including:
+company name;
+* logo of the company;
+* company favicon;
+* company address;
+* contact number;
+* company header description;
+* header color etc.
+
+![Admin](https://i.ibb.co/DG6c6FZ/Eazyrecruit-Admin.png)
+
+### Backup and Restore
+Each and every critical business software must have a backup and restore process in place to keep disasters at bay. There are a few methods with which you can backup and restore the EazyRecruit system. When setting up a backup and restore system at EazyRecruit, what one needs to keep in mind is the fact that - 
+* How often should you initiate backup? 
+* How often should one test their backup? 
+* Where will your backup be stored? 
+* Is there a need to automate the backup process?
+
+### Google Login
+A user can login by Google Account into the Admin panel. First that user should be registered into the admin panel then only he/she can login into the admin panel. 
+
+### Analytics 
+The admin panel offers detailed information related to the number of people visiting the website along with how many candidates are applying for the jobs. The information is added in a date-month pattern. Moreover, with analytics the admin can also track segregated information about the route a candidate took to apply for the job - email, webpage, or the resume was directly shared on the job listing. Out of all the resumes reaching the system how many of them were uploaded in the database can also be tracked from here.
 
 ## Commercial Support 
 We offer commercial support via our enterprise product EazyRecruit. Please visit https://www.eazyrecruit.in/ for details and trial.
