@@ -1,5 +1,7 @@
 ![Logo](https://i.ibb.co/KyNtH0m/logo-2x.png)
 
+# EazyRecruit
+
 Table of Content 
 ---
 
@@ -14,11 +16,10 @@ Table of Content
    * [Commercial Support](#Commercial-Support)
    * [License](#License)
 
-# EazyRecruit
+## Overview 
 
 An AI-enabled open source recruitment software to ease the screening and hiring process 
 
-## Overview 
 Eazyrecruit is a solution that is committed to the advancement of HR Talent Acquisition solutions. Its objective is to make the hiring process easy for employers and help them in acquiring the right talent from the market. It is an AI-enabled open source recruitment software to ease the screening and hiring process. It is an advanced and full-featured application for resume parsing, job listing, job sharing, applicant tracking, interview scheduling, interview ratings.
 
 **What can EazyRecruit be used for?** If you have to fill in positions, even if it’s only one or two jobs a year, EasyRecruit can help you with ease. From SMEs to multinational companies, EazyRecruit can prove to be an effective hiring tool. From one user to hundreds.
