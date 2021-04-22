@@ -1,3 +1,13 @@
+[[_TOC_]]
+
+## My first heading
+
+First section content.
+
+## My second heading
+
+Second section content.
+
 # EazyRecruit
 
 An AI-enabled open source recruitment software to ease the screening and hiring process 
