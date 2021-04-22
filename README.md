@@ -286,4 +286,4 @@ A user can login by Google Account into the Admin panel. First that user should 
 The admin panel offers detailed information related to the number of people visiting the website along with how many candidates are applying for the jobs. The information is added in a date-month pattern. Moreover, with analytics the admin can also track segregated information about the route a candidate took to apply for the job - email, webpage, or the resume was directly shared on the job listing. Out of all the resumes reaching the system how many of them were uploaded in the database can also be tracked from here.
 
 ## Commercial Support 
-We offer commercial support via our enterprise product EazyRecruit. Please visit https://www.eazyrecruit.in/ for details and trial.
+We offer commercial support via our enterprise product EazyRecruit. Please visit https://www.eazyrecruit.in/ for more details.
