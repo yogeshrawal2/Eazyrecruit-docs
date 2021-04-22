@@ -1,4 +1,4 @@
-! [Logo](https://i.ibb.co/KyNtH0m/logo-2x.png)
+![Logo](https://i.ibb.co/KyNtH0m/logo-2x.png)
 
 Table of Content 
 ---
