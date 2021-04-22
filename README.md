@@ -33,7 +33,7 @@ EazyRecruit can work well for very high-volume recruiting. Importing and dealing
    * Install Setup 
    * After repo cloning, copy example.env and create .env and update the variables listed there.
    * Run the command on root directory - `sh deploy.sh`
-   * After successful setup, All the details such as web url, Admin Username and Admin Password will displayed on the screen
+   * After successful setup, All the details such as web url, Admin Username and Admin Password will be displayed on the screen
 
 * Languages Used
    * Python
