@@ -1,3 +1,17 @@
+Table of Content 
+---
+
+* [Eazyrecruit](#Eazyrecruit)
+   * [Overview](#Overview)
+   * [Setup](#Setup)
+      * [Installation Guide](#Installation-Guide)
+      * [Architecture](#Architecture)
+   * [General Features](#General-Features)
+   * [Screens in Depth](#Screens-In-Depth)
+   * [Administration](#Administration)
+   * [Commercial Support](#Commercial-Support)
+   * [License](#License)
+
 # EazyRecruit
 
 An AI-enabled open source recruitment software to ease the screening and hiring process 
@@ -250,7 +264,7 @@ When the need arises to add a new skill, the admin can do it by clicking on the 
 
 ## Administration
 
-### EMail Settings
+**Email Settings**
 * Inbound Settings (imap)
 Configure Imap to fetch resume from specific email-id.
 
@@ -260,7 +274,7 @@ Configure smtp to send emails.
 * Email template Preview
 Preview and configure the email template that is sent to the applicant.
 
-### Branding
+**Branding**
 In this section of the platform, the admin can customize the job hiring page according to the company’s branding. The admin is free to add company details including:
 company name;
 * logo of the company;
@@ -272,17 +286,17 @@ company name;
 
 ![Admin](https://i.ibb.co/DG6c6FZ/Eazyrecruit-Admin.png)
 
-### Backup and Restore
+**Backup and Restore**
 Each and every critical business software must have a backup and restore process in place to keep disasters at bay. There are a few methods with which you can backup and restore the EazyRecruit system. When setting up a backup and restore system at EazyRecruit, what one needs to keep in mind is the fact that - 
 * How often should you initiate backup? 
 * How often should one test their backup? 
 * Where will your backup be stored? 
 * Is there a need to automate the backup process?
 
-### Google Login
+**Google Login**
 A user can login by Google Account into the Admin panel. First that user should be registered into the admin panel then only he/she can login into the admin panel. 
 
-### Analytics 
+**Analytics** 
 The admin panel offers detailed information related to the number of people visiting the website along with how many candidates are applying for the jobs. The information is added in a date-month pattern. Moreover, with analytics the admin can also track segregated information about the route a candidate took to apply for the job - email, webpage, or the resume was directly shared on the job listing. Out of all the resumes reaching the system how many of them were uploaded in the database can also be tracked from here.
 
 ## Commercial Support 
