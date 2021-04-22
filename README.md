@@ -287,3 +287,6 @@ The admin panel offers detailed information related to the number of people visi
 
 ## Commercial Support 
 We offer commercial support via our enterprise product EazyRecruit. Please visit https://www.eazyrecruit.in/ for more details.
+
+## License
+osl-3.0
