@@ -103,7 +103,7 @@ Dig into the EazyRecruit capabilities and features to know more.
 
 EazyRecruit is designed by recruiters, for recruiters and continues to be developed with recruiting as the sole focus. 
 
-- **Jobs/Job Pipeline**
+**Jobs/Job Pipeline**
        In this section Admin/HR can create jobs with various details such as job title, Job description, Minimum/Maximum experience required for the Job, Meta image, Meta title, Meta description etc. 
        Admin/HR can make an option to publish the job so the job can be directly published on the company public job portal where all the job details will be reflected so that an applicant can see the job details and directly apply for the job.
        Admin/HR can add different pipelines with the name such as New, Pending, Hold, Select and Reject and add an applicant directly or can add from the applicant list which is already into the system. Added applicants will first insert into the first pipeline from where Admin/HR can move them into another pipeline according to interview results.
@@ -111,37 +111,37 @@ EazyRecruit is designed by recruiters, for recruiters and continues to be develo
        - Add applicant into a specific job
        - Track different job status
 
-* **Interview Scheduler**
+**Interview Scheduler**
         In this section Admin/HR can select an applicant and schedule an interview to a specific interviewer.Admin can add various details such as job title, Interviewer name, Interview date/time and Interview round etc. during the interview schedule. Once an interview is successfully scheduled then Admin/HR, Interviewer and applicant will receive the mail with appropriate details.
  
-* **Interviewer**
+**Interviewer**
          We have implemented this section on user role base. An Admin/Hr can access all pending and completed interviews in this section and An interviewer can access all the pending interviews assigned to him where he/she can update the status of the interview, Rate to applicant skills and add comment over there.
 
-     - **Analytics**
+  - **Analytics**
          Show number of resume received on the platform.With analytics the Admin can track how many 
 
-     - **Social Sharing**
+  - **Social Sharing**
          The platform offers the possibility of sharing job requirement details added in the platform to be easily shared on various social platforms such as Linkedin, Twitter, Facebook. 
 
-     - **Branding**
+  - **Branding**
          The platform offers the facility of adding company details such as logo, name, as well as the option to include website address. The job listing page with the company’s branding adds an official touch to the experience. 
 
-     - **Upload**
+  - **Upload**
 	       In this section Admin/HR can upload an applicant resume. The resume contains data such as applicant info such as name, email, experience, mobile number, skills, all 
          related information regarding applicants is parsed by the ML Text Recognition System, and related info is saved on our platform.
 
-     - **Email Integration**
+  - **Email Integration**
          We designed an automated system that parse every resume that is sent to the company email id, and the ML algorithms gather information about applicants.
 
-     - **Public Job Portal**
-         - Branding
+  - **Public Job Portal**
+      - Branding
             Company details such as company logo, name, website can easily be customised.
-         - Publish Job Listing
+      - Publish Job Listing
             All the publishing jobs will be listed here.
-         -  Job Apply
+      -  Job Apply
             Candidates can apply for a specific job.
-         - Social Sharing
-           Share jobs on various social platforms such as Linkedin, Twitter, Facebook.
+      - Social Sharing
+        Share jobs on various social platforms such as Linkedin, Twitter, Facebook.
 
 **Support**: We have an active community of people that are willing to help as much as possible though. Also, we are slowly adding to our documentation. 
 
